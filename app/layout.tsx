@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white border-t border-stone-200 flex justify-around items-center h-16 z-50">
           <a href="/" className="flex flex-col items-center gap-1 text-stone-400 hover:text-stone-700">
             <span className="text-xl">🏠</span>
-            <span className="text-xs">홈</span>
+            <span className="text-xs">Home</span>
           </a>
           <a href="/essay" className="flex flex-col items-center gap-1 text-stone-400 hover:text-stone-700">
             <span className="text-xl">🌿</span>

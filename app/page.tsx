@@ -1,46 +1,45 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-stone-50">
-      
-      {/* 헤더 */}
-      <div className="px-6 pt-12 pb-6">
-        <p className="text-xs text-stone-400 tracking-widest uppercase mb-1">Daily Essay</p>
-        <h1 className="text-2xl font-bold text-stone-800">Murmur</h1>
-      </div>
+    <div className="h-screen overflow-hidden">
+      <div className="relative h-full flex flex-col">
+        {/* 배경 이미지 */}
+        <img src="/home.jpg" alt="배경" className="w-full h-full object-cover absolute inset-0" />
+        <div className="absolute inset-0 bg-black/30" />
 
-      {/* 소개 이미지 */}
-      <div className="mx-6 rounded-2xl overflow-hidden bg-stone-200 h-56 flex items-center justify-center">
-        <p className="text-stone-400 text-sm">🌿 오늘의 이미지</p>
-      </div>
-
-      {/* 앱 소개 */}
-      <div className="px-6 py-8 flex flex-col gap-4">
-        <div className="bg-white rounded-2xl p-5 shadow-sm">
-          <h2 className="text-base font-semibold text-stone-700 mb-2">이 앱은 무엇인가요?</h2>
-          <p className="text-sm text-stone-500 leading-relaxed">
-            읽은 사람만 들어올 수 있어요!<br/>
-            매일 3개의 질문이 주어져요.<br/>
-            말 많이 안 해도 괜찮아요.<br/>
-            한 편 읽고 들어오는 조용한 대화 공간이에요. 🌿
-          </p>
+        {/* 헤더 */}
+        <div className="relative z-10 px-6 pt-12 pb-4">
+          <p className="text-xs text-white/70 tracking-widest uppercase mb-1">Daily Essay</p>
+          <h1 className="text-2xl font-bold text-white">Murmur</h1>
         </div>
 
-        <div className="bg-white rounded-2xl p-5 shadow-sm">
-          <h2 className="text-base font-semibold text-stone-700 mb-2">어떻게 사용하나요?</h2>
-          <p className="text-sm text-stone-500 leading-relaxed">
-            Step 1. Essay 메뉴에서 오늘의 글을 확인해요<br/>
-            Step 2. 글을 읽은 분들에게는 세션 참여 기회가 주어져요<br/>
-            Step 3. Session에 참여해서 함께 생각을 나눠봐요
-          </p>
-        </div>
+        {/* 카드들 */}
+        <div className="relative z-10 px-6 pb-20 flex flex-col gap-2 mt-70">
+          <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3">
+            <h2 className="text-sm font-semibold text-white mb-1">Murmur은 어떤 공간인가요?</h2>
+            <p className="text-xs text-white/80 leading-relaxed">
+              바쁜 하루 속, 잠깐 생각이 머무는 공간입니다.<br/>
+              오늘의 에세이를 읽고 주어진 질문에 잠시 멈춰 생각해봐요.<br/>
+              대화를 통해 휴식을 얻는 조용한 대화 공간이에요. 🌿<br/> 
+                          </p>
+          </div>
 
-        <div className="bg-stone-800 rounded-2xl p-5">
-          <p className="text-sm text-stone-300 leading-relaxed italic">
-            "감정은 표현될 때 비로소 이해된다"
-          </p>
+          <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3">
+            <h2 className="text-sm font-semibold text-white mb-1">이렇게 진행돼요</h2>
+            <p className="text-xs text-white/80 leading-relaxed">
+              Step 1. Essay에서 오늘의 글을 읽어요<br/>
+              Step 2. 글을 읽은 분은 세션 참여가 가능해요<br/>
+              Step 3. Session에서 함께 생각을 이야기해요
+            </p>
+          </div>
+
+          <div className="bg-black/40 backdrop-blur-sm rounded-xl p-3">
+            <p className="text-xs text-white/80 leading-relaxed">
+              "오늘의 글을 읽고 조용히 이어지는 대화<br/>
+              혼자 남겨두기엔 좋은 생각들이 있어요"
+            </p>
+          </div>
         </div>
       </div>
-
     </div>
   )
 }
